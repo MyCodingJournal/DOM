@@ -55,3 +55,11 @@ The DOM selection methods document.querySelector() and document.querySelectorAll
 ##### Resources<br>
 - <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector">document.querySelector()</a>
 - <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll">document.querySelectorAll()</a>
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Create DOM Elements Programmatically
+
+##### document.createElement()<br>
+Creating an element in JavaScript call document.createElement('tagName'), where tagName is the name of any valid HTML tag ('p', 'div', 'span', etc.).
+
+
