@@ -36,7 +36,22 @@ You can use this method if you don't know an element's id or class, but you do k
 ##### Conclusion<br>
 Understanding the tree structure of the DOM helps us navigate all kinds of trees. In subtrees and branches we can find the nodes we need by IDs, class names or tag names, or by using element attributes like children. Once we've selected our elements, we can use JavaScript to manipulate them. By using these techniques, we can start to build a richer user experience.
 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# DOM query selector methods
+<a href="https://github.com/VGDJP-07/phase-0-the-dom-query-selector-methods">Link to lesson</a>
 
-  
+we can improve our search when we use document structure (tag, id, class) along with the tree structure of the DOM. It turns out CSS is a great language for expressing those relationships! With the querySelector() and querySelectorAll() methods, we provide one or more CSS selectors as an argument and we get back the matching element or elements. Because they can take a string containing multiple selectors, they allow us to create very specific, complex queries.
 
+##### querySelector()<br>
+The querySelector() method takes one argument, a string of one or more <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors">CSS-compatible selectors</a>, and returns the first element that matches.
 
+##### querySelectorAll()<br>
+querySelectorAll() method works a lot like querySelector()
+— it accepts a string containing one or more selectors as its argument, and it searches starting from the object that it's called on (either document or an element). However, instead of returning the first match, it returns a "NodeList collection" of all matching elements. A NodeList is similar to an HTMLCollection: it is an array-like structure containing, in this case, a list of DOM nodes.
+
+##### Conclusion<br>
+The DOM selection methods document.querySelector() and document.querySelectorAll() are powerful tools for finding the elements we need to update and change. They use the familiar CSS selector syntax and allow us to create very specific queries that give us access to elements in complex DOM trees.
+
+##### Resources<br>
+- <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector">document.querySelector()</a>
+- <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll">document.querySelectorAll()</a>
