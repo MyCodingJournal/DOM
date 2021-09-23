@@ -1,0 +1,37 @@
+<!--Given the following DOM tree:-->
+
+<!-- the `className` attribute is called `class` in HTML  -->
+<div>
+  <div class="banner">
+    <h1>Hello!</h1>
+  </div>
+
+  <div class="banner">
+    <h1>Sup?</h1>
+  </div>
+
+  <div class="banner">
+    <h5>Tinier heading</h5>
+  </div>
+</div>
+
+<!--in console-->
+document
+<!--return => #document-->
+document.getElementsByClassName('banner');
+<!--return => HTMLCollection(3) [div.banner, div.banner, div.banner]0: div.banner1: div.banner2: div.bannerlength: 3[[Prototype]]: HTMLCollection-->
+const element = document.getElementsByClassName('banner');
+<!--undefined-->
+element.length
+<!--return 3 -->
+for (item in element){
+console.log(item);
+}
+<!-- return
+VM503:2 0
+VM503:2 1
+VM503:2 2
+VM503:2 length
+VM503:2 item
+VM503:2 namedItem 
+-->
