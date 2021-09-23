@@ -58,6 +58,7 @@ The DOM selection methods document.querySelector() and document.querySelectorAll
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Create DOM Elements Programmatically
+<a href="https://github.com/VGDJP-07/phase-0-the-dom-modifying-elements-lab">Link to lab</a>
 
 ##### document.createElement()<br>
 Creating an element in JavaScript call document.createElement('tagName'), where tagName is the name of any valid HTML tag ('p', 'div', 'span', etc.).
