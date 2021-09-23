@@ -1,0 +1,54 @@
+<!--Finding a Node Without Knowing Anything About It-->
+<!--What if we don't have an id or className to help us find a particular element? This is where our knowledge of trees comes in handy!-->
+
+<main>
+  <div>
+    <div>
+      <p>Hello!</p>
+    </div>
+  </div>
+  <div>
+    <div>
+      <p>Hello!</p>
+    </div>
+  </div>
+  <div>
+    <div>
+      <p>Hello!</p>
+    </div>
+  </div>
+</main>
+
+<!--in console-->
+
+document.getElementsByTagName('div')
+<!--return HTMLCollection(6) [div, div, div, div, div, div]-->
+const type = document.getElementsByTagName('div');
+undefined
+for (item in type){
+console.log(item);
+}
+<!--
+VM252:2 0
+VM252:2 1
+VM252:2 2
+VM252:2 3
+VM252:2 4
+VM252:2 5
+VM252:2 length
+VM252:2 item
+VM252:2 namedItem
+undefined
+type.length
+6
+-->
+main.children<!--We can get the children of main using main.children-->
+<!--HTMLCollection(3) [div, div, div]=>returns innerhtml-->
+const secondChild = main.children[1];
+undefined
+const p = secondChild.getElementsByTagName('p')[0];
+undefined
+p.textContent = "Goodbye!"
+<!--'Goodbye!'-->
+
+<!--Obviously, this way of accessing that text isn't very efficient and won't work on all pages but it does a good job of demonstrating the basic tools available to us for finding and manipulating HTML elements.-->
